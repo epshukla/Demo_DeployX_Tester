@@ -10,7 +10,7 @@ app.use(express.json());
 app.get("/", (_req, res) => {
   res.json({
     name: "deployx-demo-app",
-    version: "1.0.2",
+    version: "2.0.0",
     uptime_seconds: Math.floor((Date.now() - startTime) / 1000),
     environment: process.env.NODE_ENV || "development",
   });
